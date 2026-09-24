@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+node_modules/
+apps/web/dist/
+data/*.sqlite
+data/*.sqlite-*
+backups/
+.env
+apps/api/.env

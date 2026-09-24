@@ -1,0 +1,9 @@
+[Unit]
+Description=Jizhang changed-only SQLite backup
+
+[Service]
+Type=oneshot
+User=jizhang
+WorkingDirectory=/srv/jizhang
+EnvironmentFile=/srv/jizhang/.env
+ExecStart=/srv/jizhang/apps/api/.venv/bin/python /srv/jizhang/apps/api/scripts/backup_sqlite.py

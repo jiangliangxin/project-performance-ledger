@@ -1,0 +1,22 @@
+[Unit]
+Description=Jizhang FastAPI service
+After=network.target
+
+[Service]
+Type=simple
+User=jizhang
+WorkingDirectory=/srv/jizhang/apps/api
+EnvironmentFile=/srv/jizhang/.env
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/srv/jizhang/data /srv/jizhang/backups
+ExecStartPre=/srv/jizhang/apps/api/.venv/bin/alembic -c /srv/jizhang/apps/api/alembic.ini upgrade head
+ExecStart=/srv/jizhang/apps/api/.venv/bin/uvicorn app.main:app --app-dir /srv/jizhang/apps/api --host 127.0.0.1 --port 8000 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
