@@ -1,11 +1,11 @@
 # 个人项目绩效收益记账系统开发方案（轻量版）
 
 版本：V1.2  
-对应 PRD：`PRD.md` V1.2  
+对应 PRD：[V1.2](../product/PRD.md)<br>
 适用范围：个人起步、最多约 4～5 人低并发、公网私有部署  
 原则：先把业务链路和数据隔离做对，再为未来扩展保留边界，不提前建设企业级基础设施。
 
-> `DEVELOPMENT_PLAN_ENTERPRISE_REFERENCE.md` 保留了企业化扩展参考，但不作为第一版开发标准。
+> [企业化扩展方案](../reference/DEVELOPMENT_PLAN_ENTERPRISE_REFERENCE.md) 是历史参考，不作为当前版本开发标准。
 
 ## 1. 结论：第一版不需要复杂技术栈
 

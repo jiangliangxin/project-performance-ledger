@@ -22,6 +22,15 @@ SQLite
 - CSV/JSON 导出；
 - 每日数据变化检测备份脚本。
 
+## 项目文档
+
+- [产品需求文档](docs/product/PRD.md)
+- [业务上下文与领域术语](docs/architecture/CONTEXT.md)
+- [当前轻量开发方案](docs/development/DEVELOPMENT_PLAN.md)
+- [企业化扩展历史参考](docs/reference/DEVELOPMENT_PLAN_ENTERPRISE_REFERENCE.md)
+- [公网部署验收清单](docs/operations/GO_LIVE_CHECKLIST.md)
+- [架构决策记录](docs/adr/)
+
 ## 本地启动
 
 ### 后端
